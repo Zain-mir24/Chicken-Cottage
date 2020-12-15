@@ -5,43 +5,13 @@ body {
   background-color: rgba(255, 255, 255, 0.6) !important;
   background-blend-mode: lighten !important;
 }
-.social-icons {
-  width: 30px;
-  height: 30px;
-}
-.icons {
-  color: black;
-}
-
-.nav-link {
-  font-size: 1.2rem;
-  margin: 0 15px;
-  color: black !important;
-}
-.nav-link:hover {
-  color: #8b0000 !important;
-}
-.navbar-brand {
-  margin-bottom: -12px;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0;
-}
 
 /* ||||||||||||||||the main section||||||||||||||||||*/
-#title {
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin-top: 140px;
-  margin-bottom: 10px;
-}
 .Crispy {
-  background-image: url("../images/crispy.jpg");
+  background-image: url("../images/Crispymain.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 75rem;
+  background-size: 100rem;
 }
 #title h1 {
   font-size: 7rem;
