@@ -1,0 +1,785 @@
+body {
+  margin: 0;
+  background-image: url("../images/backgroundPic.jpg") !important;
+  background-position: center center !important;
+  background-attachment: fixed !important;
+  background-repeat: repeat !important;
+  background-size: cover !important;
+  background-size: 130rem !important;
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  background-blend-mode: lighten !important;
+}
+
+.social-icons {
+  width: 30px !important;
+  height: 30px !important;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.nav-link {
+  font-size: 1.2rem !important;
+  margin: 0 15px !important;
+  color: black !important;
+}
+.nav-link:hover {
+  color: #8b0000 !important;
+}
+.navbar-brand {
+  margin-bottom: -12px !important;
+}
+
+/* the welcome section of our website */
+
+/* .carousel {
+  margin-bottom: -92px;
+}
+*/
+.wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slideshow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-50%);
+}
+.slideshow--hero {
+  z-index: 3;
+  left: 0;
+  top: 50%;
+  height: 85%;
+  transform: translateY(-50%) skewY(-10deg);
+  transform-origin: center;
+  overflow: hidden;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+}
+.slideshow--hero .slides {
+  position: absolute;
+  left: 0;
+  top: -10%;
+  width: 100vw;
+  height: 100vh;
+  animation: 13s slideshow-hero-mobile -3s infinite;
+}
+.slideshow--hero .slide1 {
+  background-image: url(../images/welcome2.jpg);
+  animation: 15s slides-set-1 -0.1s infinite;
+}
+.slideshow--hero .slide2 {
+  background-image: url(../images/welcome3.jpg);
+  animation: 15s slides-set-2 -0.1s infinite;
+}
+.slideshow--hero .slide3 {
+  background-image: url(../images/welcome4.jpg);
+  animation: 15s slides-set-3 -0.1s infinite;
+}
+.slideshow--hero .slide4 {
+  background-image: url(../images/welcome5.jpg);
+  animation: 15s slides-set-3 -0.1s infinite;
+}
+
+@media (min-width: 600px) {
+  .slideshow--hero {
+    left: 50%;
+    top: 0;
+    width: 67%;
+    height: 100%;
+    transform: translateX(-50%) skewX(-10deg);
+  }
+  .slideshow--hero .slides {
+    top: 0;
+    left: -25%;
+    height: 100%;
+    animation: 11s slideshow-hero -3s infinite;
+  }
+}
+.slideshow--contrast {
+  z-index: 1;
+  width: 100%;
+  height: 50%;
+  transform: none;
+}
+.slideshow--contrast--before {
+  left: 0;
+}
+.slideshow--contrast--before .slides {
+  width: 100vw;
+}
+.slideshow--contrast--after {
+  z-index: 2;
+  left: auto;
+  right: 0;
+}
+.slideshow--contrast--after .slides {
+  width: 100vw;
+  left: auto;
+  right: 0;
+}
+.slideshow--contrast .slides {
+  animation: 15s slideshow-contrast -5s infinite;
+}
+.slideshow--contrast .slide1 {
+  background-image: linear-gradient(to bottom, rgba(200, 200, 75, 0.25) 0, rgba(200, 75, 75, 0.5) 100%), url(../images/welcome2.jpg);
+  animation: 15s slides-set-1 -0.1s infinite;
+}
+.slideshow--contrast .slide2 {
+  background-image: linear-gradient(to bottom, rgba(200, 200, 75, 0.25) 0, rgba(200, 75, 75, 0.5) 100%), url(../images/welcome3.jpg);
+  animation: 15s slides-set-2 -0.1s infinite;
+}
+.slideshow--contrast .slide3 {
+  background-image: linear-gradient(to bottom, rgba(200, 200, 75, 0.25) 0, rgba(200, 75, 75, 0.5) 100%), url(../images/welcome4.jpg);
+  animation: 15s slides-set-3 -0.1s infinite;
+}
+.slideshow--contrast .slide4 {
+  background-image: linear-gradient(to bottom, rgba(200, 200, 75, 0.25) 0, rgba(200, 75, 75, 0.5) 100%), url(../images/welcome5.jpg);
+  animation: 15s slides-set-3 -0.1s infinite;
+}
+
+.slideshow--contrast--after {
+  top: auto;
+  bottom: 0;
+}
+.slideshow--contrast--after .slides {
+  animation: 15s slideshow-contrast -13s infinite;
+}
+.slideshow--contrast--after .slide {
+  background-position: right;
+}
+.slideshow--contrast--after .slide1 {
+  animation: 15s slides-set-1 infinite;
+}
+.slideshow--contrast--after .slide2 {
+  animation: 15s slides-set-2 infinite;
+}
+.slideshow--contrast--after .slide3 {
+  animation: 15s slides-set-3 infinite;
+}
+.slideshow--contrast--after .slide4 {
+  animation: 15s slides-set-3 infinite;
+}
+
+@media (min-width: 600px) {
+  .slideshow--contrast {
+    width: 50%;
+    height: 100%;
+  }
+  .slideshow--contrast--after {
+    top: 0;
+    bottom: auto;
+  }
+  .slideshow--contrast--after .slides {
+    width: 50vw;
+  }
+}
+
+.slides,
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@keyframes slideshow-hero-mobile {
+  0% {
+    transform: scale(1) skewY(10deg);
+  }
+  50% {
+    transform: scale(1.05) skewY(10deg);
+  }
+  100% {
+    transform: scale(1) skewY(10deg);
+  }
+}
+@keyframes slideshow-hero {
+  0% {
+    transform: scale(1) skewX(10deg);
+  }
+  50% {
+    transform: scale(1.05) skewX(10deg);
+  }
+  100% {
+    transform: scale(1) skewX(10deg);
+  }
+}
+@keyframes slideshow-contrast {
+  0% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes slideshow-contrast {
+  0% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+@keyframes slides-set-1 {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  20% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  40% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  60% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  80% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  90% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes slides-set-2 {
+  0% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+
+  20% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  40% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  60% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  80% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+}
+@keyframes slides-set-3 {
+  0% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  20% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  60% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  80% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes slides-set-4 {
+  0% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  20% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  40% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  80% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+}
+
+/* This section is for about us */
+#aboutus {
+  background-color: #8b0000;
+  color: white;
+  padding: 2% 0;
+  display: flex;
+}
+
+#aboutus .container {
+  position: relative;
+}
+.aboutus-pic {
+  float: right;
+  padding: 0 5% 5% 3%;
+}
+.aboutus h1 {
+  font-size: 2rem;
+  color: #fff;
+  text-align: left;
+  background-color: palegreen;
+  width: 25%;
+  padding-bottom: 2%;
+}
+.button {
+  padding: 1% 5%;
+  color: white;
+  background-color: red;
+  border-width: 0;
+  border-radius: 10px;
+}
+.button:hover {
+  border-width: 1px;
+  color: red;
+  background-color: white;
+}
+.small-circle {
+  position: absolute;
+  bottom: -100px;
+  right: 0;
+  background-color: #931b02;
+  border-radius: 50%;
+  display: inline-block;
+}
+.aboutus-content {
+  animation: left_to_right 3s ease;
+  font-size: 1.2rem;
+}
+
+@keyframes left_to_right {
+  from {
+    margin-left: -100%;
+    opacity: 0.5;
+  }
+  to {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
+/* 
+*
+*
+The grid system of our website
+**
+*/
+.box {
+  background-color: #fff;
+  width: 300px;
+  height: 500px;
+  border: 2px solid black;
+  border-color: black;
+  margin: 2% auto;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.standing {
+  width: 150px;
+  height: 150px;
+  padding-top: 4%;
+  margin-top: 25%;
+}
+.down {
+  margin-right: 7px;
+}
+
+.row {
+  margin-top: 30px;
+  padding: 0 7%;
+}
+
+.box h1 {
+  margin-top: 50%;
+  font-size: 2rem;
+}
+
+.text-field {
+  display: none;
+  margin: auto;
+  padding: 25% 20%;
+}
+/*
+**
+**
+        all time favourite
+                     2**
+                     **
+                     **
+                     */
+
+#alltimefav {
+  background-color: #8b0000;
+  /* width: 100% !important; */
+}
+.mainbox {
+  margin-left: 0;
+  margin-right: 0;
+}
+.photobox {
+  width: 100% !important;
+}
+
+.meal-photo {
+  width: 372px;
+  padding: 0;
+  height: 354;
+}
+
+.meal-photo img {
+  opacity: 1;
+  width: 90%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s;
+  opacity: 0.5s;
+}
+
+/* Form Section */
+#contact-us {
+  padding: 3%;
+  position: relative;
+}
+
+.form-button {
+  background-color: #8b0000;
+  color: #fff;
+  position: absolute;
+  bottom: 30px;
+  padding: 10px 5px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-button:hover {
+  color: #931b02;
+  background-color: #fff;
+}
+
+input,
+textarea {
+  border: 1px solid #931b02;
+  width: 40%;
+}
+
+::placeholder {
+  font-weight: lighter;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 300px) and (max-width: 750px) {
+  .nav-logo {
+    margin-left: 42%;
+  }
+  #top li {
+    font-size: 27px !important;
+  }
+  .navbar {
+    min-height: 250px !important;
+  }
+  .navbar-toggler {
+    font-size: 30px !important;
+  }
+  .navbar-brand img {
+    height: 150px !important;
+    width: 150px !important;
+  }
+  .nav-link {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+  }
+  .head {
+    font-size: 2.8rem !important;
+  }
+  .contact-num {
+    font-size: 5rem !important;
+  }
+  .box {
+    width: 500px !important;
+    height: 700px !important;
+  }
+  p {
+    font-size: 3rem !important;
+  }
+  .aboutus-content {
+    font-size: 2rem !important;
+    text-align: center !important;
+  }
+  .form-button {
+    bottom: 0px;
+  }
+  .small-circle {
+    display: none;
+  }
+  .large-circle {
+    text-align: center;
+    width: 380px !important;
+    height: 380px !important;
+  }
+  input,
+  textarea {
+    border: 1px solid #8b0000;
+    width: 80%;
+    padding: 10px !important;
+  }
+  .welcome img {
+    height: 500px;
+  }
+
+  .bottom-box {
+    padding: 0 0 5% !important;
+  }
+  .meal-photo {
+    text-align: center;
+  }
+  .meal-photo img {
+    height: 500px !important;
+  }
+  .wrapper {
+    height: 400px !important;
+    margin-top: 100px !important;
+  }
+  .button {
+    padding: 1% 5%;
+    border-radius: 25px;
+    color: white;
+    background-color: red;
+    font-size: 2rem;
+    margin-left: 5% !important;
+  }
+  input::placeholder {
+    font-size: 1.5rem;
+  }
+  textarea::placeholder {
+    font-size: 1.5rem;
+  }
+  .standing {
+    width: 250px;
+    height: 250px;
+  }
+  .aboutus-pic {
+    width: 100% !important;
+    text-align: center !important;
+    padding-top: 5% !important;
+    padding-bottom: 5% !important;
+  }
+  .aboutus-text {
+    display: block;
+    width: 100% !important;
+    padding: 3% 0 7% !important;
+    float: none !important;
+  }
+  .button {
+    margin-left: 35% !important;
+  }
+  .company {
+    display: block;
+    text-align: center !important;
+    padding: 2% 0;
+  }
+  #response {
+    top: 300px !important;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1000px) {
+  .nav-logo {
+    margin-left: 42%;
+  }
+  body {
+    background-size: 130rem !important;
+  }
+  p strong {
+    font-size: 3rem !important;
+  }
+  .all-content {
+    font-size: 2.7rem !important;
+    padding: 3% 0;
+  }
+  .standing {
+    width: 250px;
+    height: 250px;
+  }
+  .wrapper {
+    height: 500px !important;
+    margin-top: 100px !important;
+  }
+  .aboutus-pic img {
+    height: 585px !important;
+  }
+  #contact-us {
+    margin-top: 10%;
+  }
+  #top li {
+    font-size: 27px !important;
+  }
+  .navbar {
+    min-height: 250px !important;
+  }
+  .navbar-toggler {
+    font-size: 30px !important;
+  }
+  .navbar-brand img {
+    height: 150px !important;
+    width: 150px !important;
+  }
+  .nav-link {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+  }
+  .button {
+    padding: 1% 5% !important;
+    border-radius: 25px !important;
+    color: white;
+    background-color: red;
+    font-size: 2rem;
+    margin-left: 5% !important;
+  }
+  .box {
+    width: 500px !important;
+    height: 700px !important;
+  }
+  .aboutus-content {
+    font-size: 2rem !important;
+    text-align: center !important;
+    margin-right: 10px !important;
+  }
+  .head {
+    font-size: 2.8rem !important;
+  }
+  .contact-num {
+    font-size: 2rem !important;
+  }
+  .contact-head {
+    font-size: 7rem !important;
+  }
+  input,
+  textarea {
+    border: 1px solid #931b02;
+    width: 80%;
+    padding: 20px !important;
+  }
+  .meal-photo {
+    text-align: center;
+  }
+  .meal-photo img {
+    height: 500px !important;
+  }
+  .bottom-box {
+    padding: 0 0 5% !important;
+  }
+  .form-button {
+    bottom: 0px;
+    font-size: 2rem !important;
+    text-align: center;
+    width: 190px !important;
+  }
+  .small-circle {
+    display: none;
+  }
+  #aboutus .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  input::placeholder {
+    font-size: 1.5rem;
+  }
+  textarea::placeholder {
+    font-size: 1.5rem;
+  }
+  .aboutus-pic {
+    width: 100% !important;
+    text-align: center !important;
+    padding-top: 2% !important;
+    padding-bottom: 5% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .aboutus-pic img {
+    height: 585px !important;
+  }
+  .abutus-text {
+    display: block;
+    width: 100% !important;
+    padding: 3% 0 7% !important;
+    float: none !important;
+  }
+  .large-circle {
+    width: 100% !important;
+  }
+  .company {
+    padding: 2% 0;
+    display: block !important;
+    text-align: center !important;
+    margin: 0 !important;
+  }
+  .button {
+    margin-left: 35% !important;
+  }
+  #response {
+    top: 300px !important;
+  }
+}
+
+@media (min-width: 640px) and (max-height: 600px) {
+  .navbar {
+    min-height: 100px !important;
+  }
+  .wrapper {
+    height: 500px !important;
+    margin-top: 50px !important;
+  }
+}

@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  background-image: url("../images/backgroundPic.jpg");
+  background-size: 130rem;
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  background-blend-mode: lighten !important;
+}
+.social-icons {
+  width: 30px;
+  height: 30px;
+}
+.icons {
+  color: black;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  margin: 0 15px;
+  color: black !important;
+}
+.nav-link:hover {
+  color: #8b0000 !important;
+}
+.navbar-brand {
+  margin-bottom: -12px;
+}
+
+/* ||||||||||||||||||||||||||||||||||||TITLE IMAGE SECTION|||||||||||||||||||||||||||||||||| */
+#title-img {
+  margin-top: 140px;
+}
+
+.container {
+  padding: 2% 0;
+}
+p {
+  font-size: 1.3rem;
+}
+@media (min-width: 300px) and (max-width: 750px) {
+  /*
+||||||||||||||||||||||| styling the header and the menu options||||||||||||||||||||||||||||||||||||||||||
+  */
+  .nav-logo {
+    margin-left: 42%;
+  }
+  #title-img {
+    margin-top: 250px;
+  }
+  #top li {
+    font-size: 27px !important;
+  }
+  .nav-link {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+  }
+  .navbar {
+    min-height: 250px !important;
+  }
+  .navbar-toggler {
+    font-size: 30px !important;
+  }
+  .navbar-brand img {
+    height: 150px !important;
+    width: 150px !important;
+  }
+}
+@media (min-width: 750px) and (max-width: 1000px) {
+  /*
+||||||||||||||||||||||| styling the header and the menu options||||||||||||||||||||||||||||||||||||||||||
+    */
+  .nav-logo {
+    margin-left: 42%;
+  }
+  #title-img {
+    margin-top: 250px;
+  }
+  #top li {
+    font-size: 27px !important;
+  }
+  .nav-link {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+  }
+  .navbar {
+    min-height: 250px !important;
+  }
+  .navbar-toggler {
+    font-size: 30px !important;
+  }
+  .navbar-brand img {
+    height: 150px !important;
+    width: 150px !important;
+  }
+}
+@media (min-width: 640px) and (max-height: 600px) {
+  .navbar {
+    min-height: 100px !important;
+  }
+}

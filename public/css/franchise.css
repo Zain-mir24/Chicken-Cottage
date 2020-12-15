@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  background-image: url("../images/backgroundPic.jpg ");
+  background-size: 130rem;
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  background-blend-mode: lighten !important;
+}
+.social-icons {
+  width: 30px;
+  height: 30px;
+}
+.icons {
+  color: black;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+.nav-link {
+  font-size: 1.2rem;
+  margin: 0 15px;
+  color: black !important;
+}
+.nav-link:hover {
+  color: #8b0000 !important;
+}
+.navbar-brand {
+  margin-bottom: -12px;
+}
+#title {
+  margin-top: 30px;
+  padding: 4% 0;
+  background-color: white;
+}
+.title-button {
+  background-color: #0154a2;
+  color: white;
+  border-radius: 5px;
+  width: 150px;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-width: 0;
+  box-shadow: 1px 1px 3px grey;
+}
+.title-button:hover {
+  background-color: red;
+}
+/* Eye On Future Section */
+.container {
+  padding: 2% 0;
+}
+@media (min-width: 300px) and (max-width: 750px) {
+  /*
+||||||||||||||||||||||| styling the header and  title||||||||||||||||||||||||||||||||||||||||||
+  */
+  .nav-logo {
+    margin-left: 42%;
+  }
+  .nav-link {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+  }
+
+  .container-fluid {
+    width: 100% !important;
+  }
+  #top li {
+    font-size: 27px !important;
+  }
+  .navbar {
+    min-height: 250px !important;
+  }
+  .navbar-toggler {
+    font-size: 30px !important;
+  }
+  .navbar-brand img {
+    height: 150px !important;
+    width: 150px !important;
+  }
+  #title {
+    margin-top: 230px !important;
+    height: auto !important;
+  }
+  /* ||||||||||||||||styling the heading and lists |||||||||||||||||||*/
+  .list ul li {
+    font-size: 1.5rem !important;
+  }
+  .list {
+    width: 80% !important;
+    padding-right: 0px !important;
+  }
+  /* /||||||||||||||||||styling the image||||||||||||||||||/ */
+  .container-fluid img {
+    padding: 0% !important;
+  }
+  /* /||||||||||||||||STYLING THE EOF PARAGRAPHS|||||||||||||||||||||/ */
+  .theory p {
+    font-size: 1.5rem !important;
+  }
+  /* /|||||||||||||||||||||||TITLE BUTTON|||||||||||||||||||||||||||||||/ */
+  .title-button {
+    width: 200px !important;
+    height: 50px !important;
+  }
+  .title-button {
+    font-size: 1.3rem;
+  }
+  /* /||||||||||||||||||||||image|||||||||||||||||||||||||||/ */
+  .app {
+    height: 200px;
+  }
+  footer {
+    margin-top: 550px !important;
+  }
+}
+@media (min-width: 750px) and (max-width: 1000px) {
+  /*
+||||||||||||||||||||||| styling the header and title||||||||||||||||||||||||||||||||||||||||||
+  */
+  .nav-logo {
+    margin-left: 42%;
+  }
+  .nav-link {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+  }
+  .container-fluid {
+    width: 100% !important;
+  }
+  #top li {
+    font-size: 27px !important;
+  }
+  .navbar {
+    min-height: 250px !important;
+  }
+  .navbar-toggler {
+    font-size: 30px !important;
+  }
+  .navbar-brand img {
+    height: 150px !important;
+    width: 150px !important;
+  }
+  #title {
+    margin-top: 230px !important;
+    height: auto !important;
+  }
+  /* ||||||||||||||||styling the heading and lists |||||||||||||||||||*/
+  .list ul li {
+    font-size: 1.5rem !important;
+  }
+  .list {
+    width: 80% !important;
+    padding-right: 0px !important;
+  }
+
+  /* /||||||||||||||||||styling the image||||||||||||||||||/ */
+  .container-fluid img {
+    padding: 0% !important;
+  }
+
+  /* /||||||||||||||||STYLING THE EOF PARAGRAPHS|||||||||||||||||||||/ */
+  .theory p {
+    font-size: 1.5rem !important;
+  }
+  /* /|||||||||||||||||||||||TITLE BUTTON|||||||||||||||||||||||||||||||/ */
+  .title-button {
+    width: 200px !important;
+    height: 50px !important;
+  }
+  .title-button {
+    font-size: 1.3rem;
+  }
+
+  /* /||||||||||||||||||||||image|||||||||||||||||||||||||||/ */
+  .app {
+    height: 200px;
+  }
+  footer {
+    margin-top: 550px !important;
+  }
+}
+
+@media (min-width: 640px) and (max-height: 600px) {
+  .navbar {
+    min-height: 100px !important;
+  }
+}

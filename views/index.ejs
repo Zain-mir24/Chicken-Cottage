@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+
+
+  <%- include('partials/header'); -%>
+
+  <br /><br />
+  <br><br><br><br>
+  <!-- 
+        **
+        **
+        ***
+                                       this is the welcome section of te website
+                                                 **
+                                                 ***
+                                                 ***
+                                            
+                                            
+    -->
+  <% if(submit===true){  %>
+  <section id="response"
+    style="background-color:red; color: white; display:inline; position: absolute; top: 150px; right: 0; z-index: 5; padding: 1% 2%;">
+    <p>Your response has been submitted <i class="far fa-check-circle fa-lg"></i></p>
+  </section>
+  <% }%>
+  <section class="welcome">
+    <div class="wrapper" style="background-image: url(./images/welcome4.jpg);background-size: 100% 100%;">
+      <div class="slideshows">
+        <div class="slideshow slideshow--hero">
+          <div class="slides">
+            <div class="slide slide1"></div>
+            <div class="slide slide2"></div>
+            <div class="slide slide3"></div>
+            <div class="slide slide4"></div>
+
+          </div>
+        </div>
+        <div class="slideshow slideshow--contrast slideshow--contrast--before">
+          <div class="slides">
+            <div class="slide slide1"></div>
+            <div class="slide slide2"></div>
+            <div class="slide slide3"></div>
+            <div class="slide slide4"></div>
+
+          </div>
+        </div>
+        <div class="slideshow slideshow--contrast slideshow--contrast--after">
+          <div class="slides">
+            <div class="slide slide1"></div>
+            <div class="slide slide2"></div>
+            <div class="slide slide3"></div>
+            <div class="slide slide4"></div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!--
+    **
+    *
+    **
+    **
+                   Building the about us section
+                                                        **
+                                                        ***
+                                                        **
+-->
+
+  <!-- <section id="aboutus">
+    <div class="container-fluid" style="padding: 0 6%;">
+      <div class="row">
+        <div class="col-lg-6" style="padding: 0 0 3%; width: 100%;">
+          <br>
+          <h1 style="font-weight: 700; font-size: 4rem;">Our Company</h1>
+          <br />
+          <p class="aboutus-content">CHICKEN COTTAGE is more than just a quick service
+            restaurant. It is where customers will go out of their way to bring their family for good old fashioned
+            family time while enjoying the quality of service, atmosphere and above all, the taste of our food.</p>
+          <p class="aboutus-content">CHICKEN COTTAGE is unlike any other quick service
+            restaurants where it mixes values with quality and speedy service that comes with care.</p>
+          <p class="aboutus-content">It has got the heritage and familiarity of a large chain,
+            but it feels like a liberated restaurant, thanks to the team that works there and the values it was built
+            upon</p>
+          <button type="button" class="button" onclick="window.location.href='/aboutus'">Read more</button>
+        </div>
+        <div class="col-lg-6 aboutus-pic" style="text-align: center;">
+          <img class="large-circle" style="height: 520px; width:800px;" src="./images/5thslide.jpg" alt="" />
+        </div>
+      </div>
+  </section> -->
+
+  <section id="aboutus">
+    <div>
+      <h1 class="company" style="font-weight: 700; font-size: 4rem; margin-left: 5%; display: inline;">Our Company</h1>
+      <div class="aboutus-pic">
+        <img class="large-circle" style="height: 520px; width:800px;" src="images/mainaboutus.jpeg" alt="" />
+      </div>
+      <div class="aboutus-text" style="padding: 0 5% 4% 5%;">
+        <br>
+        <br />
+        <p class="aboutus-content">CHICKEN COTTAGE is more than just a quick service
+          restaurant. It is where customers will go out of their way to bring their family for good old fashioned
+          family time while enjoying the quality of service, atmosphere and above all, the taste of our food.</p>
+        <p class="aboutus-content">CHICKEN COTTAGE is unlike any other quick service
+          restaurants where it mixes values with quality and speedy service that comes with care.</p>
+        <p class="aboutus-content">It has got the heritage and familiarity of a large chain,
+          but it feels like a liberated restaurant, thanks to the team that works there and the values it was built
+          upon</p><br>
+        <button type="button" class="button" onclick="window.location.href='/aboutus'">Read more</button>
+      </div>
+    </div>
+  </section>
+
+  <!--
+    *
+    *
+    **
+    **
+                   Building the 4th section grid system
+                                                        **
+                                                        ***
+                                                        **
+-->
+
+  <section id="What we stand for" class="container-fluid">
+    <br /><br />
+    <h1 style="text-align: center; font-size: 3rem; font-weight: 700;">WHAT WE STAND FOR</h1>
+    <br /><br /><br />
+    <div class="row">
+      <div class="col-lg-4 col-xs-4">
+        <div class="box shadow-lg">
+          <img class="standing" src="./images/PEOPLE.png" alt="" />
+          <h1 class="head" style="font-size:1.49rem;">PEOPLE</h1>
+        </div>
+      </div>
+      <div class="col-lg-4 col-xs-4">
+        <div class="box shadow-lg">
+          <img class="standing" src="./images/SATISFACTION.png" alt="" />
+          <h1 class="head" style="font-size:1.49rem;">SATISFACTION</h1>
+        </div>
+      </div>
+      <div class="col-lg-4 col-xs-4">
+        <div class="box shadow-lg">
+          <img class="standing" src="./images/FLAVOURS.png" alt="" />
+          <h1 class="head" style="font-size:1.49rem;">FLAVOUR</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row bottom-box" style="margin-top:0;padding: 5% 21%">
+      <div class="col-lg-6 col-xs-4">
+        <div class="box shadow-lg">
+          <img class="standing down" src="./images/VALUE.png" alt="" />
+          <h1 class="head" style="font-size:1.49rem;">VALUE</h1>
+        </div>
+      </div>
+      <div class="col-lg-6 col-xs-4">
+        <div class="box shadow-lg">
+          <img class="standing down" src="./images/SPEED.png" alt="" />
+          <h1 class="head" style="font-size:1.49rem;">SPEED</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--
+**
+***
+***
+                                ALL TIME FAVOURITES SECTION
+                                                    ***
+                                                    ****
+                                                    ****
+-->
+  <section id="alltimefav">
+
+    <div class="container-fluid mainbox" style="padding:0;">
+      <br>
+      <br>
+
+      <div style="margin-top: 10px;">
+        <p style="color: white; font-size: 2.5rem; text-align: center;">
+          <img src="./images/star.png" alt="" style="height:50px;">
+          <strong>All TIME FAVOURITES</strong>
+          <img src="./images/star.png" alt="" style="height:50px;">
+        </p>
+
+      </div>
+      <br><br>
+
+
+      <div class="container-fluid photobox">
+        <div class="row">
+          <div class="col-lg-4 meal-photo">
+            <a href="/ourfood"><img src="./images/alltimefav2.jpg"
+                style="height:320px; width:90%; border: 2px solid white;"
+                alt="Chicken breast steak with vegetables"></a> <br>
+            <br> <br>
+            <p style="text-align: center; font-size: 2rem; color: white;">Peri Peri chicken</p><br>
+
+
+          </div>
+
+          <div class="col-lg-4 meal-photo">
+            <a href="/ourfood"><img src="./images/al.jpg" style="height:320px; width: 90%; border: 2px solid white;"
+                alt="Simple italian pizza with cherry tomatoes"></a> <br> <br>
+            <br>
+            <p style="text-align: center;font-size: 2rem; color: white;">Grilled Chicken Burger</p><br>
+
+          </div>
+          <div class="col-lg-4 meal-photo">
+            <a href="/ourfood"><img src="./images/alltimefav1.jpg"
+                style="height:320px; width:90%; border: 2px solid white;"
+                alt="Korean bibimbap with egg and vegetables"></a> <br> <br> <br>
+            <p style="text-align: center;font-size: 2rem; color: white;">Crispy chicken</p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-us">
+
+    <p class="contact-head"
+      style="text-align: center;margin-top: 20px; font-size: 4rem;  color:#8b0000; letter-spacing: 5px;">
+      <strong>CONTACT US</strong></p>
+
+
+    <p class="contact-num" style="text-align: center;color:#8b0000; font-size:1.5rem;">
+      Contact No : 03111827777 / 03345556166
+    </p>
+
+    <div style="text-align: center; padding: 2% 0;">
+      <a href="http://Facebook.com/chickencottagepak" target="_blank"><i style="color:#3b5998 ;"
+          class="fab fa-facebook fa-3x icons"></i>&nbsp&nbsp&nbsp&nbsp</a>
+      <a href="https://www.instagram.com/chickencottagepak/" target="_blank"><img
+          style="position: relative; width:60px ;bottom:13px;"
+          src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="">&nbsp&nbsp&nbsp&nbsp</a>
+      <a href="https://twitter.com/chickencottag10" target="_blank"><i style="color: #00acee;"
+          class="fab fa-twitter fa-3x icons"></i>&nbsp&nbsp&nbsp&nbsp</a>
+    </div>
+
+    <center>
+      <form action='/' method='post' style="margin-left:-10px">
+        <div>
+          <input type='text' name='username' size="60" placeholder="  Name" style='padding: 4px; border-radius:10px;'
+            required /><br><br>
+          <input type='email' name='email' size="60" placeholder="  Email" style='padding: 4px;border-radius:10px;'
+            required /><br><br>
+          <input type='text' name='subject' size="60" placeholder="  Subject" style='padding: 4px;border-radius:10px;'
+            required /><br><br>
+          <textarea style="resize: none; border-radius: 10px;" id="w3review" name="message" rows="9" cols="61"
+            style='border-radius:10px; ' placeholder="  Type your message here" required></textarea><br>
+          <button class="form-button" style="width:100px;" name="register" type="submit">Submit</button>
+          <!-- <input class="form-button" type='submit' name='register' value='Complete Registration'/> -->
+        </div>
+      </form>
+  </section>
+  <br /><br /><br><br><br><br>
+  <%- include('partials/footer'); -%>
