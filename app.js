@@ -66,6 +66,9 @@ app.get("/burger", function (req, res) {
 app.get("/news", function (req, res) {
   res.render("news");
 });
+app.get("/salad", function (req, res) {
+  res.render("salad");
+});
 
 app.get("/franchise", function (req, res) {
   res.render("franchise");
