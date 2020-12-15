@@ -616,7 +616,7 @@ input[type="date" i] {
 }
 
 .main_menu > li:hover > a {
-  color: #ec1d25;
+  color:red;
   text-decoration: none;
 }
 
@@ -689,7 +689,7 @@ input[type="date" i] {
 */
 .social a {
   font-size: 15px;
-  color: white;
+  color:#ec1d25;
 }
 
 .header-fixed .social a {
@@ -697,7 +697,7 @@ input[type="date" i] {
 }
 
 .social a:hover {
-  color: #ec1d25;
+  color: white;
 }
 
 .btn-show-sidebar {
@@ -713,8 +713,8 @@ input[type="date" i] {
 }
 
 .btn-show-sidebar:hover {
-  border-top: 2px solid #ec1d25;
-  border-bottom: 2px solid #ec1d25;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
 }
 
 @media (max-width: 1200px) {
