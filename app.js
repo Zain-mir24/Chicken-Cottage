@@ -72,6 +72,9 @@ app.get("/salad", function (req, res) {
 app.get("/BBQ", function (req, res) {
   res.render("BBQ");
 });
+app.get("/Grilled", function (req, res) {
+  res.render("Grilled");
+});
 
 app.get("/franchise", function (req, res) {
   res.render("franchise");
