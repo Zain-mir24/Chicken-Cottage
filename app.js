@@ -51,6 +51,14 @@ app.get("/crispy", function (req, res) {
   res.render("crispy");
 });
 
+app.get("/wrap", function (req, res) {
+  res.render("wrap");
+});
+app.get("/vegetarian", function (req, res) {
+  res.render("vegetarian");
+});
+
+
 app.get("/burger", function (req, res) {
   res.render("burger");
 });
