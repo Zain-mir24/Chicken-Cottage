@@ -87,7 +87,9 @@ app.get("/aboutus", function (req, res) {
 app.get("/faq", function (req, res) {
   res.render("faq");
 });
-
+app.get("/sides",function(req,res){
+  res.render("sides");
+})
 //////////////// NEW FRONT END //////////////////////////
 app.get("/home", function (req, res) {
   res.render("home")
