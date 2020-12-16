@@ -23,7 +23,7 @@ var transporter = nodemailer.createTransport({
 app.get("/", function (req, res) {
   res.render("index", { submit: false });
 });
-app.post("/", function (req, res) {
+app.post("/contact", function (req, res) {
   var mailOptions = {
     from: "chickencottage310@gmail.com",
     to: "Info@chickencottage.com.pk",
@@ -35,12 +35,11 @@ app.post("/", function (req, res) {
       console.log(error);
     } else {
       console.log("Email sent: " + info.response);
-      res.redirect("/", { submit: true });
+      res.redirect("/contact");
     }
   });
-  res.render("index", { submit: true });
+  res.render("contact");
 });
-
 app.get("/ourfood", function (req, res) {
   res.render("ourfood");
 });
@@ -97,6 +96,9 @@ app.get("/home", function (req, res) {
 
 app.get("/newabout", function (req, res) {
   res.render("newaboutus");
+});
+app.get("/contact", function (req, res) {
+  res.render("contact");
 });
 //////////////////// ZAIN ROUTE /////////////////////////
 app.get("/zain", function (req, res) {
