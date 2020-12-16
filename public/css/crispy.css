@@ -35,7 +35,17 @@ body {
   display: block;
   text-align: left;
 }
-
+.slowmo-img img {
+  transform-origin: 50% 65%;
+  transition: transform 5s, filter 3s ease-in-out;
+  filter: brightness(150%);
+}
+ 
+/* The Transformation */
+.slowmo-img:hover img {
+  filter: brightness(100%);
+  transform: scale(3);
+}
 
 .dropdown-content a:hover {
   background-color: #ddd;
