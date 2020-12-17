@@ -3813,7 +3813,17 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 		  margin-left:90px !important;
 	  } */
 }
-@media(min-width:600px){
+@media(min-width:801px) and (max-width:1300px){
+	.p3 img{
+		width: 60% !important;
+		margin-left:150px !important;
+	}
+	.p3 .BBQh{
+		margin-left:140px !important;
+	}
+	.p4 h3{
+		margin-left:200px !important;
+	}
 	/* crispy width on horizontal*/
 	.p2 img {
 		width: 60% !important;
@@ -3825,7 +3835,60 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	  }
 	  .p1 img {
 		width: 50% !important;
+		margin-left:130px !important;
+		padding-left:20px !important;
+		padding-right:1px !important;
+		margin-left: 10px;
+		
+	  }
+	  /* burrger responsive*/
+	  .p4 img{
+		  margin-left:100px !important;
+	  }
+	 .blo1 .crip{
+		  margin-left:50px !important;
+	  }
+	  .right h3{
+		  margin-left: 40px !important;
+	  }
+	  .blo1 .peri-peri{
+		margin-left:150px !important
+	  }
+	  .blo1 p{
+           margin-left:80px !important
+	  }
+	  .blo1 .gridd{
+		  margin-left:140px !important;
+	  }
+}
+
+@media(min-width:670px) and (max-width:800px){
+	.p3 img{
+		width: 60% !important;
+		margin-left:150px !important;
+
+	}
+	.p4 img{
 		margin-left:100px !important;
+
+	}
+	
+	.p3 .head{
+		margin-left:140px !important;
+		text-align: center !important;
+	}
+	/* crispy width on horizontal*/
+	.p2 img {
+		width: 60% !important;
+		margin-left:150px !important;
+		padding-left:20px !important;
+		padding-right:1px !important;
+		margin-left: 10px;
+		
+	  }
+	  .p1 img {
+		width: 50% !important;
+		margin-left:130px !important;
 		padding-left:20px !important;
 		padding-right:1px !important;
 		margin-left: 10px;
@@ -3834,9 +3897,7 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	 .blo1 .crip{
 		  margin-left:50px !important;
 	  }
-	  .right h3{
-		  margin-left: 40px !important;
-	  }
+	  
 	  .blo1 .peri-peri{
 		margin-left:150px !important
 	  }
@@ -3889,6 +3950,12 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 		margin-left: 10px;
 		
 	  }
+	  .p4 img{
+		margin-left:50px !important;
+		width: 80% !important;
+		
+	}
+	  
 	 .blo1 .crip{
 		  margin-left:30px !important;
 	  }
