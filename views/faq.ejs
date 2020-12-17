@@ -1,29 +1,263 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- ================================================================================================ -->
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/faqStyle.css">
-  <script src="jquery-3.5.1.min.js"></script>
+  <!--===============================================================================================-->
+  <link rel="icon" type="image/png" href="./images/akhriasli.png" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/lightbox2/css/lightbox.min.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="css/util.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="stylesheet" href="css/BBQ.css" />
+  <!-- <link rel="stylesheet" href="css/faqStyle.css"> -->
 
-  <%- include('partials/header'); %>
+  <!--===============================================================================================-->
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script> -->
+  <style>
+    @media (min-width: 750px) and (max-width: 1000px) {
+      .insta {
+        width: 42px;
+      }
 
-  <section id="FAQ">
-    <div class="container-fluid">
-      <h1 class="head" style="color: red; font-weight: 700; font-size: 2.5rem; padding: 0 0 0 20%;">FAQ</h1>
+      .dropdown-menu {
+        font-size: 30px !important;
+      }
+
+      .container-fluid {
+        padding: 0 !important;
+      }
+    }
+
+    .myDIV {
+      display: none;
+      border: 2px solid red;
+      padding: 2%;
+    }
+
+    .container-fluid {
+      padding: 0 0 0 20%;
+    }
+
+    button {
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body class="animsition  bg2-pattern ">
+  <header>
+    <!-- Header desktop -->
+    <div class="wrap-menu-header gradient1 trans-0-4">
+      <div class="container h-full">
+        <div class="wrap_header trans-0-3">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="home">
+              <img src="./images/saimlogo.png" alt="IMG-LOGO" data-logofixed="./images/saimlogo.png" />
+            </a>
+          </div>
+
+          <!-- Menu -->
+          <div class="wrap_menu p-l-45 p-l-0-xl">
+            <nav class="menu">
+              <ul class="main_menu">
+                <li>
+                  <a href="home">Home</a>
+                </li>
+
+                <li>
+                  <a href="franchise">Franchise</a>
+                </li>
+
+                <li>
+                  <a href="gallery">Gallery</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    OurFood
+                  </a>
+                  <div class="dropdown-content" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="/crispy">Crispy</a>
+                    <a class="dropdown-item" href="/grilled">Grilled</a>
+                    <a class="dropdown-item" href="/bbq">BBQ</a>
+                    <a class="dropdown-item" href="/burger">Burger</a>
+                    <a class="dropdown-item" href="/wrap">Wraps</a>
+                    <a class="dropdown-item" href="/vegetarian">Vegetarian</a>
+                    <a class="dropdown-item" href="/salad">Salad</a>
+                   
+                    <a class="dropdown-item" href="/sides">Sides</a>
+                  </div>
+                </li>
+                <li>
+                  <a href="newabout">About us</a>
+                </li>
+
+                <li>
+                  <a href="contact">Contact us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Social -->
+          <div class="social flex-w flex-l-m p-r-20">
+
+            <a href=" http://Facebook.com/chickencottagepak" target="blank"><i class="fa fa-facebook m-l-21 fa-lg"
+                aria-hidden="true"></i></a>
+            <a href=" https://www.instagram.com/chickencottagepak/" target="blank"><i
+                class="fa fa-instagram m-l-21 fa-lg" aria-hidden="true"></i></a>
+
+            <button class="btn-show-sidebar m-l-33 trans-0-4"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+  <!-- Sidebar -->
+  <aside class="sidebar trans-0-4 text-center">
+    <!-- Button Hide sidebar -->
+    <button class="btn-hide-sidebar ti-close color0-hov trans-0-4"></button>
+
+    <!-- - -->
+    <ul class="menu-sidebar p-t-95 p-b-70">
+      <li class="t-center m-b-13">
+        <a href="home" class="txt19">Home</a>
+      </li>
+
+      <li class="t-center m-b-13">
+        <a href="franchise" class="txt19">franchise</a>
+      </li>
+
+      <li class="t-center m-b-13">
+        <a href="gallery" class="txt19">Gallery</a>
+      </li>
+      <li class="dropdown">
+        <button class="dropdown-toggle m-b-13 txt19" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Our Food
+        </button>
+        <div class="dropdown-content" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="/crispy">Crispy</a>
+          <a class="dropdown-item" href="/grilled">Grilled</a>
+          <a class="dropdown-item" href="/bbq">BBQ</a>
+          <a class="dropdown-item" href="/burger">Burger</a>
+          <a class="dropdown-item" href="/wrap">Wraps</a>
+          <a class="dropdown-item" href="/vegetarian">Vegetarian</a>
+          <a class="dropdown-item" href="/salad">Salad</a>
+         
+          <a class="dropdown-item" href="/sides">Sides</a>
+        </div>
+      </li>
+
+      <li class="t-center m-b-13">
+        <a href="newabout" class="txt19">About us</a>
+      </li>
+
+
+      <li class="t-center">
+        <!-- Button3 -->
+        <a href="contact" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto"> contact us </a>
+      </li>
+
+
+
+    </ul>
+
+    <!-- - -->
+    <div class="gallery-sidebar t-center p-l-60 p-r-60 p-b-40">
+      <!-- - -->
+      <h4 class="txt20 m-b-33">Gallery</h4>
+
+      <!-- Gallery -->
+      <div class="wrap-gallery-sidebar flex-w">
+        <a class="item-gallery-sidebar wrap-pic-w" href="images/interior1.jpg" data-lightbox="gallery-footer">
+          <img src="./images/interior1.jpg" alt="GALLERY" />
+        </a>
+
+        <a class="item-gallery-sidebar wrap-pic-w" href="images/interior2.jpg" data-lightbox="gallery-footer">
+          <img src="./images/interior2.jpg" alt="GALLERY" />
+        </a>
+
+        <a class="item-gallery-sidebar wrap-pic-w" href="images/food3.jpg" data-lightbox="gallery-footer">
+          <img src="images/food3.jpg" alt="GALLERY" />
+        </a>
+
+        <a class="item-gallery-sidebar wrap-pic-w" href="images/interior4.jpg" data-lightbox="gallery-footer">
+          <img src="images/interior4.jpg" alt="GALLERY" />
+        </a>
+
+        <a class="item-gallery-sidebar wrap-pic-w" href="images/interior5.jpg" data-lightbox="gallery-footer">
+          <img src="images/interior5.jpg" alt="GALLERY" />
+        </a>
+
+        <a class="item-gallery-sidebar wrap-pic-w" href="images/Culinary expertise.jpg" data-lightbox="gallery-footer">
+          <img src="images/Culinary expertise.jpg" alt="GALLERY" />
+        </a>
+
+        <a class="item-gallery-sidebar wrap-pic-w" href="images/interior6.jpg" data-lightbox="gallery-footer">
+          <img src="images/interior6.jpg" alt="GALLERY" />
+        </a>
+
+        <a class="item-gallery-sidebar wrap-pic-w" href="images/food4.jpg" data-lightbox="gallery-footer">
+          <img src="images/food4.jpg" alt="GALLERY" />
+        </a>
+
+        <a class="item-gallery-sidebar wrap-pic-w" href="images/mouth watering.jpg" data-lightbox="gallery-footer">
+          <img src="images/mouth watering.jpg" alt="GALLERY" />
+        </a>
+      </div>
+    </div>
+  </aside>
+  <div style="height: 200px !important;">
+
+  </div>
+  <section id="FAQ" style="text-align: left !important;margin-left: 0 !important;">
+    <div class="container">
+      <h1 class="head" style="color: red; font-weight: 700; font-size: 2.5rem; padding: 0">FAQ</h1><br>
     </div>
     <hr style="height: 2px; margin-bottom: 0; border-width: 0; background-color: red; margin-top: 0" /><br>
-    <div class="container-fluid" style="text-align: left;padding: 0 0 0 20%;">
+    <div class="container" style="text-align: left;">
       <button class="read" style="color:red; border:white;background-color:white"><i class="fa fa-plus"></i>
-        <h4> Why us?</h4>
+        <span> Why us?</span>
       </button>
       <div class="myDIV">
         <p>
         <p>We, at Chicken Cottage, have a proven track record and are recognised leaders in this field. Food may be a
-          necessity for life however fast food doesn’t have to be, people can exercise choice. The public demands value
-          and quality for money and Chicken Cottage meets and exceeds these demands. We constantly strive to rise above
+          necessity for life however fast food doesn’t have to be, people can exercise choice. The public demands
+          value
+          and quality for money and Chicken Cottage meets and exceeds these demands. We constantly strive to rise
+          above
           the traditional ‘fast food joint’ image to evoke a more discerning dining experience in both our product
           offering and the ambience of the venue.</p>
         <p>Our business model ensures that franchises do not have to sacrifice quality or standards to make an
@@ -40,7 +274,7 @@
         </p>
       </div><br><br>
       <button class="read" style="color:red; border:white;background-color:white"><i class="fa fa-plus"></i>
-        <h4> Why the fast food industry?</h4>
+        <span> Why the fast food industry?</span>
       </button>
       <div class="myDIV">
         <p>
@@ -55,8 +289,9 @@
         </p>
       </div><br><br>
 
-      <button class="read" style="color:red; border:white;background-color:white"><i class="fa fa-plus"></i>
-        <h4> How much upfront invetment would be required?</h4>
+      <button class="read" style="color:red; border:white;background-color:white; text-align: left;"><i
+          class="fa fa-plus"></i>
+        <span>How much upfront invetment would be required?</span>
       </button>
       <div class="myDIV">
         <p>
@@ -67,15 +302,18 @@
         </p>
       </div><br><br>
 
-      <button class="read" style="color:red; border:white;background-color:white"><i class="fa fa-plus"></i>
-        <h4> What on-going support do you offer?</h4>
+      <button class="read" style="color:red; border:white;background-color:white; text-align: left;"><i
+          class="fa fa-plus"></i>
+        <span> What on-going support do you offer?</span>
       </button>
       <div class="myDIV">
         <p>
-        <p>We provide in-house training and ‘Franchise Forums’ where different guest speakers can give presentations on
+        <p>We provide in-house training and ‘Franchise Forums’ where different guest speakers can give presentations
+          on
           a variety of topics. We actively advertise and never forget that our franchisees’ success and our own is
           entwined. </p>
-        <p>Our award winning senior management are highly skilled and their business acumen has been recognised as such.
+        <p>Our award winning senior management are highly skilled and their business acumen has been recognised as
+          such.
         </p>
         <p>Our dedicated support team works hard to pro-actively assist and guide our franchisees.</p>
 
@@ -85,11 +323,12 @@
 
 
       <button class="read" style="color:red; border:white;background-color:white"><i class="fa fa-plus"></i>
-        <h4> How much work is invloved for me?</h4>
+        <span> How much work is invloved for me?</span>
       </button>
       <div class="myDIV">
         <p>
-        <p>Not a lot of work is required from the franchisees mainly because the business set up is already in place and
+        <p>Not a lot of work is required from the franchisees mainly because the business set up is already in place
+          and
           all the franchisee needs to do is follow our guidelines.Irrespective of their previous work experience,
           Franchisees are trained by us to be managers of their units and we ensure they are guided every step of the
           way to setting up and running their own business.</p>
@@ -97,33 +336,36 @@
       </div><br><br>
 
       <button class="read" style="color:red; border:white;background-color:white"><i class="fa fa-plus"></i>
-        <h4> How are your Franchises holding up in a turbulent financial climate?</h4>
+        <span> How are your Franchises holding up in a turbulent financial climate?</span>
       </button>
 
       <div class="myDIV">
         <p>
         <p>People still want to eat out, but economically – we fit the bill!In support of our franchisees we are
-          constantly developing strategies and introducing ways that our franchisees can maximise their profits and stay
+          constantly developing strategies and introducing ways that our franchisees can maximise their profits and
+          stay
           ahead of the game.</p>
         </p>
       </div><br><br>
 
       <button class="read" style="color:red; border:white;background-color:white"><i class="fa fa-plus"></i>
-        <h4> How do you intend to keep up this momentum?</h4>
+        <span> How do you intend to keep up this momentum?</span>
       </button>
 
       <div class="myDIV">
         <p>
-        <p>Chicken Cottage invest heavily in research and development and marketing and both management and franchisees
+        <p>Chicken Cottage invest heavily in research and development and marketing and both management and
+          franchisees
           share the costs as well as the rewards and benefits. These economies of scale reflect on all our balance
-          sheets. By anticipating customers’ real needs and reacting to an evolving society we have seen a rapid growth
+          sheets. By anticipating customers’ real needs and reacting to an evolving society we have seen a rapid
+          growth
           in the number or our restaurants (and, therefore, our business) around the world.</p>
         </p>
       </div><br><br>
 
 
       <button class="read" style="color:red; border:white;background-color:white"><i class="fa fa-plus"></i>
-        <h4> Does a franchise tend to just put in a manager</h4>
+        <span> Does a franchise tend to just put in a manager</span>
       </button>
 
       <div class="myDIV">
@@ -136,7 +378,7 @@
       </div><br><br>
 
       <button class="read" style="color:red; border:white;background-color:white"><i class="fa fa-plus"></i>
-        <h4> What trainig will i recieve?</h4>
+        <span> What trainig will i recieve?</span>
       </button>
 
       <div class="myDIV">
@@ -150,7 +392,7 @@
       </div><br><br>
 
       <button class="read" style="color:red; border:white;background-color:white"><i class="fa fa-plus"></i>
-        <h4> what makes a great chicken cottage franchise?</h4>
+        <span> what makes a great chicken cottage franchise?</span>
       </button>
 
       <div class="myDIV">
