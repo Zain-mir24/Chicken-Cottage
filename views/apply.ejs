@@ -1,132 +1,361 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- ================================================================================================ -->
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+  <!--===============================================================================================-->
+  <link rel="icon" type="image/png" href="./images/akhriasli.png" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/lightbox2/css/lightbox.min.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="css/util.css" />
+  <link rel="stylesheet" type="text/css" href="css/applymain.css" />
   <link rel="stylesheet" href="css/apply.css" />
-  <%- include('partials/header') %>
+  <link rel="stylesheet" href="css/burger.css">
+
+  <!--===============================================================================================-->
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script> -->
+  <style>
+    @media (min-width: 750px) and (max-width: 1000px) {
+      .insta {
+        width: 42px;
+      }
+
+      .dropdown-menu {
+        font-size: 30px !important;
+      }
+    }
+  </style>
+  </head>
+
+<body class="animsition  bg2-pattern ">
+  <header>
+    <!-- Header desktop -->
+    <div class="wrap-menu-header gradient1 trans-0-4">
+      <div class="container h-full">
+        <div class="wrap_header trans-0-3">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="home">
+              <img src="./images/saimlogo.png" alt="IMG-LOGO" data-logofixed="./images/saimlogo.png" />
+            </a>
+          </div>
+
+          <!-- Menu -->
+          <div class="wrap_menu p-l-45 p-l-0-xl">
+            <nav class="menu">
+              <ul class="main_menu">
+                <li>
+                  <a href="home">Home</a>
+                </li>
+
+                <li>
+                  <a href="franchise">Franchise</a>
+                </li>
+
+                <li>
+                  <a href="gallery">Gallery</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    OurFood
+                  </a>
+                  <div class="dropdown-content" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/crispy">Crispy</a>
+                    <a class="dropdown-item" href="/burger">Burger</a>
+                    <a class="dropdown-item" href="/wrap">Wraps</a>
+                    <a class="dropdown-item" href="/vegetarian">Vegetarian</a>
+                    <a class="dropdown-item" href="/bbq">BBQ</a>
+                    <a class="dropdown-item" href="/salad">Salad</a>
+                    <a class="dropdown-item" href="/grilled">Grilled</a>
+                    <a class="dropdown-item" href="/sides">sides</a>
+                  </div>
+                </li>
+                <li>
+                  <a href="newabout">About us</a>
+                </li>
+
+                <li>
+                  <a href="contact">Contact us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Social -->
+          <div class="social flex-w flex-l-m p-r-20">
+            
+            <a href=" http://Facebook.com/chickencottagepak" target="blank"><i class="fa fa-facebook m-l-21 fa-lg" aria-hidden="true"></i></a>
+            <a href=" https://www.instagram.com/chickencottagepak/" target="blank"><i class="fa fa-instagram m-l-21 fa-lg" aria-hidden="true"></i></a>
+
+            <button class="btn-show-sidebar m-l-33 trans-0-4"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+
+
+  <!-- Sidebar -->
+  <aside class="sidebar trans-0-4 text-center">
+    <!-- Button Hide sidebar -->
+    <button class="btn-hide-sidebar ti-close color0-hov trans-0-4"></button>
+
+    <!-- - -->
+    <ul class="menu-sidebar p-t-95 p-b-70">
+      <li class="t-center m-b-13">
+        <a href="home" class="txt19">Home</a>
+      </li>
+      
+      <li class="t-center m-b-13">
+        <a href="franchise" class="txt19">franchise</a>
+      </li>
+
+      <li class="t-center m-b-13">
+        <a href="gallery" class="txt19">Gallery</a>
+      </li>
+      <li class="dropdown">
+        <button class="dropdown-toggle m-b-13 txt19" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Our Food
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="/crispy">Crispy</a>
+          <a class="dropdown-item" href="/burger">Burger</a>
+          <a class="dropdown-item" href="/wrap">Wraps</a>
+          <a class="dropdown-item" href="/vegetarian">Vegetarian</a>
+          <a class="dropdown-item" href="/bbq">BBQ</a>
+          <a class="dropdown-item" href="/salad">Salad</a>
+          <a class="dropdown-item" href="/grilled">Grilled</a>
+          <a class="dropdown-item" href="/sides">Sides</a>
+        </div>
+      </li>
+
+      <li class="t-center m-b-13">
+        <a href="newabout" class="txt19">About us</a>
+      </li>
+
+     
+      <li class="t-center">
+        <!-- Button3 -->
+        <a href="contact" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto"> contact us </a>
+      </li>
+
+    
+     
+    </ul>
+
+    <!-- - -->
+    <div class="gallery-sidebar t-center p-l-60 p-r-60 p-b-40">
+      <!-- - -->
+      <h4 class="txt20 m-b-33">Gallery</h4>
+
+      <!-- Gallery -->
+      <div class="wrap-gallery-sidebar flex-w">
+        <a class="item-gallery-sidebar wrap-pic-w" href="images/interior1.jpg" data-lightbox="gallery-footer">
+          <img src="./images/interior1.jpg" alt="GALLERY" />
+        </a>
+
+        <a class="item-gallery-sidebar wrap-pic-w" href="images/interior2.jpg" data-lightbox="gallery-footer">
+          <img src="./images/interior2.jpg" alt="GALLERY" />
+        </a>
+
+        <a class="item-gallery-sidebar wrap-pic-w" href="images/food3.jpg" data-lightbox="gallery-footer">
+          <img src="images/food3.jpg" alt="GALLERY" />
+        </a>
+
+        <a class="item-gallery-sidebar wrap-pic-w" href="images/interior4.jpg" data-lightbox="gallery-footer">
+          <img src="images/interior4.jpg" alt="GALLERY" />
+        </a>
+
+        <a class="item-gallery-sidebar wrap-pic-w" href="images/interior5.jpg" data-lightbox="gallery-footer">
+          <img src="images/interior5.jpg" alt="GALLERY" />
+        </a>
+
+        <a class="item-gallery-sidebar wrap-pic-w" href="images/Culinary expertise.jpg" data-lightbox="gallery-footer">
+          <img src="images/Culinary expertise.jpg" alt="GALLERY" />
+        </a>
+
+        <a class="item-gallery-sidebar wrap-pic-w" href="images/interior6.jpg" data-lightbox="gallery-footer">
+          <img src="images/interior6.jpg" alt="GALLERY" />
+        </a>
+
+        <a class="item-gallery-sidebar wrap-pic-w" href="images/food4.jpg" data-lightbox="gallery-footer">
+          <img src="images/food4.jpg" alt="GALLERY" />
+        </a>
+
+        <a class="item-gallery-sidebar wrap-pic-w" href="images/mouth watering.jpg" data-lightbox="gallery-footer">
+          <img src="images/mouth watering.jpg" alt="GALLERY" />
+        </a>
+      </div>
+    </div>
+  </aside>
+
   <br /><br />
   <br /><br /><br />
   <br />
   <br />
   <br />
 
-  <% if(submit===true){  %>
-  <section id="response"
-    style="background-color:red; color: white; display:inline; position: absolute; top: 150px; right: 0; z-index: 5; padding: 1% 2%;">
-    <p>Your response has been submitted <i class="far fa-check-circle fa-lg"></i></p>
-  </section>
-  <% }%>
-  <section id="Financial">
-    <!--|||||||||||||||||||||General||||||||||||||||||||-->
-    <form action="/apply" method="POST" enctype="multipart/form-data">
-      <div class="container">
-        <h1 style="color: red">Apply Now</h1>
-      </div>
-      <hr style="height: 2px; margin-bottom: 0; border-width: 0; background-color: red; margin-top: 0" />
-      <br />
-      <div class="container title-text" style="background-color: white; border: 2px solid red;padding-top: 1%;">
-        <p>If you are interested in starting your own chicken cottage franchise then please fill in the form below.</p>
-        <p>Please ensure that you have filled out all sections before pressing the send button, in the Declaration
-          section.</p>
-      </div><br>
-
-      <div class="container" style="background-color: white;border:red 1.5px solid">
-        <span style="color: red; font-size: 1.5rem">General Information</span>
-        <div class="row" style="width: 70%; background-color: white; padding: 1%">
-          <div class="col-lg-6 col-md-12">
-            <span>YourName*</span>
-            <input style="width: 100%" type="text" name="name" required />
-            <span>Date of birth*</span>
-            <input style="width: 100%" type="date" name="dob" required />
-            <span>Nationality*</span>
-            <input style="width: 100%" type="text" name="nationality" required />
-            <span>Mobile Number 1*</span>
-            <input style="width: 100%" type="text" name="mobilenum1" required />
-            <span>Residential Address*</span>
-            <textarea id="" style="width: 100%; resize: none" name="res_address" rows="5" required></textarea>
-            <span>Gender*</span><br /><br>
-            &nbsp&nbsp <input type="radio" value="Male" name="gender" />
-            <h3>&nbspMale&nbsp</h3> <input type="radio" value="Female" name="gender" />
-            <h3>&nbspFemale</h3>
+  <% if(submit===true){ %>
+    <section id="response"
+      style="background-color:red; color: white; display:inline; position: absolute; top: 150px; right: 0; z-index: 5; padding: 1% 2%;">
+      <p>Your response has been submitted <i class="far fa-check-circle fa-lg"></i></p>
+    </section>
+    <% }%>
+      <section id="Financial">
+        <!--|||||||||||||||||||||General||||||||||||||||||||-->
+        <form action="/apply" method="POST" enctype="multipart/form-data">
+          <div class="container">
+            <h1 style="color: red">Apply Now</h1>
           </div>
-          <div class="col-lg-6 col-md-12">
-            <span>Your Email*</span>
-            <input style="width: 100%" type="text" name="email" required />
-            <span>Martial Status*</span>
-            <input style="width: 100%" type="text" name="mar_status" required />
-            <span>CNIC*</span>
-            <input style="width: 100%" type="text" name="cnic" required />
-            <span>Mobile Number 2*</span>
-            <input style="width: 100%" type="text" name="mobilenum2" required />
-            <span>Previous Address*</span>
-            <textarea id="" style="width: 100%; resize: none" name="prev_address" rows="5" required></textarea>
-          </div>
-        </div>
+          <hr style="height: 2px; margin-bottom: 0; border-width: 0; background-color: red; margin-top: 0" />
+          <br />
+          <div class="container title-text" style="background-color: white; border: 2px solid red;padding-top: 1%;">
+            <p>If you are interested in starting your own chicken cottage franchise then please fill in the form
+              below.</p>
+            <p>Please ensure that you have filled out all sections before pressing the send button, in the Declaration
+              section.</p>
+          </div><br>
 
-        <br />
-        <br />
-
-        <!--business section starting-->
-        <div class="container">
-          <span style="color: red; font-size: 1.5rem">Business Experience</span>
-          <div class="row" style="width: 70%; background-color: white; padding: 1%">
-            <div style="width: 100%;" class="col-lg-12 col-lg-offset-2">
-              <span style="color:black">Do you have any business related experience?</span> <br /><br />
-              &nbsp<input type="radio" name="bus_exp" value="Sole Proprietor" required />
-              <h3>Sole Proprietor &nbsp</h3><input type="radio" name="bus_exp" value="Partnership" required />
-              <h3>Partnership &nbsp</h3>
-              <div class="no-block">
-                &nbsp<input type="radio" name="bus_exp" value="No" />
-                <h3>No</h3> <br /><br />
+          <div class="container" style="background-color: white;border:red 1.5px solid">
+            <span style="color: red; font-size: 1.5rem">General Information</span>
+            <div class="row" style="width: 70%; background-color: white; padding: 1%">
+              <div class="col-lg-6 col-md-12">
+                <span>YourName*</span>
+                <input style="width: 100%" type="text" name="name" required />
+                <span>Date of birth*</span>
+                <input style="width: 100%" type="date" name="dob" required />
+                <span>Nationality*</span>
+                <input style="width: 100%" type="text" name="nationality" required />
+                <span>Mobile Number 1*</span>
+                <input style="width: 100%" type="text" name="mobilenum1" required />
+                <span>Residential Address*</span>
+                <textarea id="" style="width: 100%; resize: none" name="res_address" rows="5" required></textarea>
+                <span>Gender*</span><br /><br>
+                &nbsp&nbsp <input type="radio" value="Male" name="gender" />
+                <span style="font-weight: lighter; font-size: 0.9rem;">&nbspMale&nbsp</span> <input type="radio"
+                  value="Female" name="gender" />
+                <span style="font-weight: lighter; font-size: 0.9rem;">&nbspFemale</span>
               </div>
-              <span style="color:black">Do you have experience in the food industry?</span> <br /><br />
-              &nbsp<input type="radio" value="Yes" name="food_exp" required />
-              <h3>Yes</h3>
-              <input value="NO" name="food_exp" type="radio" required />
-              <h3>No &nbsp </h3> <br /><br />
-              <span style="color:black">If yes, please outline previous experience</span> <br /><br />
-              &nbsp<textarea name="foodExp_detail" id="" style="width: 100%; resize: none" rows="5"></textarea>
+              <div class="col-lg-6 col-md-12">
+                <span>Your Email*</span>
+                <input style="width: 100%" type="text" name="email" required />
+                <span>Martial Status*</span>
+                <input style="width: 100%" type="text" name="mar_status" required />
+                <span>CNIC*</span>
+                <input style="width: 100%" type="text" name="cnic" required />
+                <span>Mobile Number 2*</span>
+                <input style="width: 100%" type="text" name="mobilenum2" required />
+                <span>Previous Address*</span>
+                <textarea id="" style="width: 100%; resize: none" name="prev_address" rows="5" required></textarea>
+              </div>
+            </div>
+
+            <br />
+            <br />
+
+            <!--business section starting-->
+            <div class="container">
+              <span style="color: red; font-size: 1.5rem">Business Experience</span>
+              <div class="row" style="width: 70%; background-color: white; padding: 1%">
+                <div style="width: 100%;" class="col-lg-12 col-lg-offset-2">
+                  <span style="color:black; font-weight: 700;">Do you have any business related experience?</span>
+                  <br /><br />
+                  <!-- &nbsp<input type="radio" name="bus_exp" value="Sole Proprietor" required />
+                  <span>Sole Proprietor &nbsp</span><input type="radio" name="bus_exp" value="Partnership" required />
+                  <span>Partnership &nbsp</span>
+                  <span class="no-block"><input type="radio" name="bus_exp" value="No" />
+                    <span>No</span></span> <br /><br /> -->
+                  <ul>
+                    <li style="color: black !important;"><input type="radio" name="bus_exp" value="Sole Proprietor"
+                        required />
+                      <span>Sole Proprietor &nbsp</span>
+                    </li>
+                    <li style="color: black !important;"><input type="radio" name="bus_exp" value="Partnership"
+                        required />
+                      <span>Partnership &nbsp</span>
+                    </li>
+                    <li style="color: black !important;"><input type="radio" name="bus_exp" value="No" />
+                      <span>No</span></span>
+                    </li>
+                  </ul>
+                  <br><br>
+                  <span style="color:black; font-weight: 700;">Do you have experience in the food industry?</span>
+                  <br /><br />
+                  &nbsp<input type="radio" value="Yes" name="food_exp" required />
+                  <span>Yes &nbsp;</span>
+                  <input value="NO" name="food_exp" type="radio" required />
+                  <span>No &nbsp </span> <br /><br />
+                  <span style="color:black; font-weight: 700;">If yes, please outline previous experience</span>
+                  <br /><br />
+                  &nbsp<textarea name="foodExp_detail" id="" style="width: 100%; resize: none" rows="5"></textarea>
+                </div>
+              </div>
+            </div>
+            <br />
+            <!--Financial section starting-->
+            <div class="container">
+              <span style="color: red; font-size: 1.5rem">Financial Details</span>
+              <div class="row" style="width: 70%; background-color: white; padding: 1%">
+                <div class="col-lg-6 col-lg-offset-2">
+                  <span>Monthly income*</span>
+                  <input style="width: 100%" type="text" name="mon_income" required />
+                  <span>Property income*</span>
+                  <input style="width: 100%" type="text" name="pro_income" required />
+                  <span>Total income*</span>
+                  <input style="width: 100%" type="text" name="tot_income" required />
+                </div>
+                <div class="col-lg-6 col-lg-offset-2">
+                  <span>Dividends, Interest*</span>
+                  <input style="width: 100%" type="text" name="div_interest" required />
+                  <span>Spouse's Income*</span>
+                  <input style="width: 100%" type="text" name="spo_interest" />
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <br />
-        <!--Financial section starting-->
-        <div class="container">
-          <span style="color: red; font-size: 1.5rem">Financial Details</span>
-          <div class="row" style="width: 70%; background-color: white; padding: 1%">
-            <div class="col-lg-6 col-lg-offset-2">
-              <span>Monthly income*</span>
-              <input style="width: 100%" type="text" name="mon_income" required />
-              <span>Property income*</span>
-              <input style="width: 100%" type="text" name="pro_income" required />
-              <span>Total income*</span>
-              <input style="width: 100%" type="text" name="tot_income" required />
-            </div>
-            <div class="col-lg-6 col-lg-offset-2">
-              <span>Dividends, Interest*</span>
-              <input style="width: 100%" type="text" name="div_interest" required />
-              <span>Spouse's Income*</span>
-              <input style="width: 100%" type="text" name="spo_interest" />
-            </div>
+          <div class="container">
+            <input type="file" style="border: 1px solid white; width: 20% !important;" name="upload" /><br />
+            <br><input class="checkbox" type="checkbox" required />
+            <h6 style="display: inline;">&nbspI agree that the information I have provided is
+              correct to the
+              best of my
+              knowledge</h6> <br /><br />
+            <button type="submit" class="button">Send Appliation</button>
           </div>
-        </div>
-      </div>
-      <div class="container">
-        <input type="file" style="border: 1px solid white" name="upload" /><br />
-        <br><input class="checkbox" type="checkbox" required />
-        <h5 style="display: inline;">&nbspI agree that the information I have provided is
-          correct to the
-          best of my
-          knowledge</h5> <br /><br />
-        <button type="submit" class="button">Send Appliation</button>
-      </div>
-      </div>
-    </form>
-  </section>
-  <br />
-  <br />
-  <br />
-  <!--||||||||||||||||||||||||||||||FOOTER|||||||||||||||||||||||||||-->
-  <%- include('partials/footer') %>
+          </div>
+        </form>
+      </section>
+      <br />
+      <br />
+      <br />
+      <!--||||||||||||||||||||||||||||||FOOTER|||||||||||||||||||||||||||-->
+      <%- include('partials/footer') %> 
