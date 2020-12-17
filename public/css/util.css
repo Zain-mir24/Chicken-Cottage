@@ -3789,6 +3789,63 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	.p-t-0-md {padding-top: 0;}
 
 	.bo-none-md {border: none;}
+	/* .hov-img-zoom img {
+		width: 60% !important;
+		margin-left:150px !important;
+		padding-left:20px !important;
+		padding-right:1px !important;
+		margin-left: 10px;
+		
+	  }
+	 .blo1 .crip{
+		  margin-left:30px !important;
+	  }
+	  .right h3{
+		  margin-left: 40px !important;
+	  }
+	  .blo1 h3{
+		margin-left:80px !important
+	  }
+	  .blo1 p{
+           margin-left:60px !important
+	  }
+	  .blo1 .gridd{
+		  margin-left:90px !important;
+	  } */
+}
+@media(min-width:600px){
+	/* crispy width on horizontal*/
+	.p2 img {
+		width: 60% !important;
+		margin-left:150px !important;
+		padding-left:20px !important;
+		padding-right:1px !important;
+		margin-left: 10px;
+		
+	  }
+	  .p1 img {
+		width: 50% !important;
+		margin-left:100px !important;
+		padding-left:20px !important;
+		padding-right:1px !important;
+		margin-left: 10px;
+		
+	  }
+	 .blo1 .crip{
+		  margin-left:50px !important;
+	  }
+	  .right h3{
+		  margin-left: 40px !important;
+	  }
+	  .blo1 .peri-peri{
+		margin-left:150px !important
+	  }
+	  .blo1 p{
+           margin-left:80px !important
+	  }
+	  .blo1 .gridd{
+		  margin-left:140px !important;
+	  }
 }
 
 
@@ -3825,4 +3882,29 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 		-ms-align-items: center;
 		align-items: center;
 	}
+	.hov-img-zoom img {
+		width: 100% !important;
+		padding-left:20px !important;
+		padding-right:1px !important;
+		margin-left: 10px;
+		
+	  }
+	 .blo1 .crip{
+		  margin-left:30px !important;
+	  }
+	  .right h3{
+		  margin-left: 40px !important;
+	  }
+	  .blo1 h3{
+		margin-left:80px !important
+	  }
+	  .blo1 p{
+           margin-left:60px !important
+	  }
+	  .blo1 .gridd{
+		  margin-left:90px !important;
+	  }
+	 
 }
+
+
