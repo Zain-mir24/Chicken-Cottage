@@ -78,6 +78,9 @@ app.get("/Grilled", function (req, res) {
 app.get("/franchise", function (req, res) {
   res.render("franchise");
 });
+app.get("/gallery",function(req,res){
+  res.render("gallery")
+})
 
 app.get("/aboutus", function (req, res) {
   res.render("aboutus");
