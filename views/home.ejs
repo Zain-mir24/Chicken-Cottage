@@ -34,7 +34,6 @@
   <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="css/util.css" />
   <link rel="stylesheet" type="text/css" href="css/main.css" />
-
   <link rel="stylesheet" href="css/BBQ.css" />
 
   <!--===============================================================================================-->
@@ -54,12 +53,20 @@
         text-align: center !important;
       }
 
-      
+    }
+
+    @media (max-width: 575px) {
+      .hov-img-zoom img {
+        height: 300px !important;
+      }
+    }
+    @media(min-width: 600px){
+
     }
   </style>
 </head>
 
-<body class="animsition  ">
+<body class="animsition  bg2-pattern ">
   <header>
     <!-- Header desktop -->
     <div class="wrap-menu-header gradient1 trans-0-4">
@@ -67,7 +74,7 @@
         <div class="wrap_header trans-0-3">
           <!-- Logo -->
           <div class="logo">
-            <a href="home">
+            <a href="/">
               <img src="./images/saimlogo.png" alt="IMG-LOGO" data-logofixed="./images/saimlogo.png" />
             </a>
           </div>
@@ -77,7 +84,7 @@
             <nav class="menu">
               <ul class="main_menu">
                 <li>
-                  <a href="home">Home</a>
+                  <a href="/">Home</a>
                 </li>
 
                 <li>
@@ -104,7 +111,7 @@
                   </div>
                 </li>
                 <li>
-                  <a href="newabout">About us</a>
+                  <a href="aboutus">About us</a>
                 </li>
 
                 <li>
@@ -140,7 +147,7 @@
     <!-- - -->
     <ul class="menu-sidebar p-t-95 p-b-70">
       <li class="t-center m-b-13">
-        <a href="home" class="txt19">Home</a>
+        <a href="/" class="txt19">Home</a>
       </li>
 
       <li class="t-center m-b-13">
@@ -168,7 +175,7 @@
       </li>
 
       <li class="t-center m-b-13">
-        <a href="newabout" class="txt19">About us</a>
+        <a href="aboutus" class="txt19">About us</a>
       </li>
 
 
@@ -226,7 +233,7 @@
       </div>
     </div>
   </aside>
-  <section class="section-slide  bg2-pattern">
+  <section class="section-slide">
     <div class="wrap-slick1">
       <div class="slick1">
         <div class="item-slick1 item1-slick1" style="background-image: url(./images/affan4.png)">
@@ -295,7 +302,7 @@
     </div>
   </section>
   <!-- Welcome -->
-  <section class="section-welcome bg1-pattern p-t-120 p-b-105  bg2-pattern">
+  <section class="section-welcome bg1-pattern p-t-120 p-b-105">
     <div class="container">
       <div class="row">
         <div class="col-md-6 p-t-45 p-b-30">
@@ -338,7 +345,7 @@
     -->
 
   <!-- Intro -->
-  <section class="section-intro  bg2-pattern">
+  <section class="section-intro">
     <div class="header-intro parallax100 t-center p-t-135 p-b-158" style="background-image: url(images/bg-intro-01.jpg">
       <span class="tit2 p-l-15 p-r-15"> Discover </span>
 
@@ -392,8 +399,8 @@
           <div class="col-md-4 p-t-30">
             <!-- Block1 -->
             <div class="blo1">
-              <div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-                <a href="#" ><img src="images/Culinary expertise.jpg" style="height: 250px;" alt="IMG-INTRO"></a>
+              <div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom culinary">
+                <a href="#"><img src="images/Culinary expertise.jpg" style="height: 250px" alt="IMG-INTRO" /></a>
               </div>
 
               <div class="wrap-text-blo1 p-t-35">
@@ -412,7 +419,7 @@
       </div>
     </div>
   </section>
-  <section style="text-align: center;" class="section-ourmenu bg2-pattern p-t-115 p-b-120  bg2-pattern">
+  <section style="text-align: center;" class="section-ourmenu bg2-pattern p-t-115 p-b-120">
     <div class="container">
       <div class="title-section-ourmenu t-center m-b-22">
         <span class="tit2 t-center"> Discover </span>
@@ -426,31 +433,31 @@
             <div class="col-sm-6">
               <!-- Item our menu -->
               <div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-                <img src="images/vertical 1.jpg" style="height: 525px" alt="IMG-MENU" />
+                <img src="images/vertical 1.jpg" style="height: 500px" alt="IMG-MENU" />
 
                 <!-- Button2 -->
-                <a href="#" class="btn2 flex-c-m txt5 ab-c-m size5"> Crispy </a>
+                <a href="crispy" class="btn2 flex-c-m txt5 ab-c-m size5"> Crispy </a>
               </div>
             </div>
 
             <div class="col-sm-6">
               <!-- Item our menu -->
               <div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-                <img src="images/vertical2.jpg" style="height: 525px" alt="IMG-MENU" />
+                <img src="images/vertical2.jpg" style="height: 500px" alt="IMG-MENU" />
 
                 <!-- Button2 -->
-                <a href="#" class="btn2 flex-c-m txt5 ab-c-m size5"> Grilled </a>
+                <a href="Grilled" class="btn2 flex-c-m txt5 ab-c-m size5"> Grilled </a>
               </div>
             </div>
 
             <div class="col-12">
               <!-- Item our menu -->
               <div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30 phasi-image">
-                <img src="images/horizontal4.jpg" style="height: 505px" alt="IMG-MENU" />
+                <img src="images/horizontal4.jpg" style="height: 465px" alt="IMG-MENU" />
 
                 <!-- Button2 -->
 
-                <a href="#" class="btn2 flex-c-m txt5 ab-c-m size6"> Spicy Crispy </a>
+               <a href="crispy" class="btn2 flex-c-m txt5 ab-c-m size5" style="padding: 6% 0;"> Spicy Crispy </a>
               </div>
             </div>
           </div>
@@ -464,7 +471,7 @@
                 <img src="images/horizontal1.jpg" alt="IMG-MENU" />
 
                 <!-- Button2 -->
-                <a href="#" class="btn2 flex-c-m txt5 ab-c-m size5"> BBQ </a>
+                <a href="BBQ" class="btn2 flex-c-m txt5 ab-c-m size5"> BBQ </a>
               </div>
             </div>
 
@@ -474,7 +481,7 @@
                 <img src="images/horizontal2.jpg" alt="IMG-MENU" />
 
                 <!-- Button2 -->
-                <a href="#" class="btn2 flex-c-m txt5 ab-c-m size5"> wrap </a>
+                <a href="wrap" class="btn2 flex-c-m txt5 ab-c-m size5"> wrap </a>
               </div>
             </div>
 
@@ -488,12 +495,12 @@
               </div>
             </div>
             <div class="col-12">
-              <!-- Item our menu -->
               <div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30" style>
-                <img src="images/horizontal7.jpg" alt="IMG-MENU" />
+              <!-- Item our menu -->
+                <img src="images/horizontal7.jpg" style="height: 250px;" alt="IMG-MENU" />
 
                 <!-- Button2 -->
-                <a href="#" class="btn2 flex-c-m txt5 ab-c-m size5"> Sides </a>
+                <a href="sides" class="btn2 flex-c-m txt5 ab-c-m size5"> Sides </a>
               </div>
             </div>
           </div>
@@ -529,8 +536,8 @@
   <!--The contact us form-->
 
   <!-- Booking -->
-  <section class="section-booking bg1-pattern p-t-100 p-b-110  bg2-pattern">
-    <div class="container thecontact">
+  <section class="section-booking bg1-pattern p-t-100 p-b-110">
+    <div class="container">
       <div class="row">
         <div class="col-lg-6 p-b-30">
           <div class="t-center">
@@ -579,7 +586,8 @@
         </div>
 
         <div class="col-lg-6 p-b-30 p-t-18">
-          <div class="wrap-pic-booking size2 bo-rad-10 hov-img-zoom m-l-r-auto" style="width: 550px;margin-top:20%;">
+          <div class="wrap-pic-booking size2 bo-rad-10 hov-img-zoom m-l-r-auto"
+            style="width: 100% !important;margin-top:20%;">
             <img src="images/saim.png" alt="IMG-OUR" />
           </div>
         </div>

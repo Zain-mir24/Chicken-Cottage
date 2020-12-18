@@ -3818,6 +3818,10 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 		width: 60% !important;
 		margin-left:150px !important;
 	}
+	.p5 img{
+		margin-left:300px !important;
+	}
+	
 	.p3 .BBQh{
 		margin-left:140px !important;
 	}
@@ -3840,6 +3844,9 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 		padding-right:1px !important;
 		margin-left: 10px;
 		
+	  }
+	  .culinary img{
+		  height: 155px !important;
 	  }
 	  /* burrger responsive*/
 	  .p4 img{
@@ -3865,7 +3872,7 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	  }
 }
 
-@media(min-width:670px) and (max-width:800px){
+@media(min-width:660px) and (max-width:800px){
 	.p3 img{
 		width: 60% !important;
 		margin-left:150px !important;
@@ -3875,10 +3882,19 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 		margin-left:100px !important;
 
 	}
+	.p4 .head{
+		margin-left:140px !important;
+	}
+	.p5 img{
+		margin-left:180px !important;
+	}
+	.p5 h3{
+		text-align: center !important;
+	}
 	
 	.p3 .head{
-		margin-left:140px !important;
-		text-align: center !important;
+		margin-left:150px !important;
+	
 	}
 	/* crispy width on horizontal*/
 	.p2 img {
