@@ -3860,6 +3860,9 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	  .blo1 .gridd{
 		  margin-left:140px !important;
 	  }
+	  .p5 img{
+		  margin-left: 30px !important;
+	  }
 }
 
 @media(min-width:670px) and (max-width:800px){
@@ -3955,6 +3958,13 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 		width: 80% !important;
 		
 	}
+
+	.p5 img{
+		margin-left: 20px !important;
+		margin-right: -12px !important;
+		height: 250px !important;
+	}
+	
 	  
 	 .blo1 .crip{
 		  margin-left:30px !important;

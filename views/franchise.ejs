@@ -33,10 +33,12 @@
   <link rel="stylesheet" type="text/css" href="vendor/lightbox2/css/lightbox.min.css" />
   <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="css/util.css" />
-  <link rel="stylesheet" type="text/css" href="css/main.css" />
-  <link rel="stylesheet" href="css/BBQ.css" />
-  <link rel="stylesheet" href="css/franchise.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="css/main.css" /> -->
 
+  <link rel="stylesheet" href="css/applymain.css">
+  <link rel="stylesheet" href="css/salad.css">
+
+  <link rel="stylesheet" href="css/franchise.css" />
   <!--===============================================================================================-->
   <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script> -->
   <style>
@@ -48,6 +50,33 @@
       .dropdown-menu {
         font-size: 30px !important;
       }
+
+      .list {
+        padding-right: 0 !important;
+      }
+
+      #title {
+        margin-top: 100px !important;
+      }
+
+    }
+
+    @media (max-width:575px) {
+      .table-pic {
+        height: 300px !important;
+      }
+
+      .title-txt {
+        padding: 4% 0;
+        text-align: center;
+        font-size: 2.7rem !important;
+      }
+
+    }
+
+    .list {
+      padding-top: 2%;
+      padding-right: 30% !important;
     }
   </style>
 </head>
@@ -85,15 +114,16 @@
                     aria-haspopup="true" aria-expanded="false">
                     OurFood
                   </a>
-                  <div class="dropdown-content" aria-labelledby="navbarDropdown">
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="/crispy">Crispy</a>
+                    <a class="dropdown-item" href="/grilled">Grilled</a>
+                    <a class="dropdown-item" href="/bbq">BBQ</a>
                     <a class="dropdown-item" href="/burger">Burger</a>
                     <a class="dropdown-item" href="/wrap">Wraps</a>
                     <a class="dropdown-item" href="/vegetarian">Vegetarian</a>
-                    <a class="dropdown-item" href="/bbq">BBQ</a>
                     <a class="dropdown-item" href="/salad">Salad</a>
-                    <a class="dropdown-item" href="/grilled">Grilled</a>
-                    <a class="dropdown-item" href="/sides">sides</a>
+                   
+                    <a class="dropdown-item" href="/sides">Sides</a>
                   </div>
                 </li>
                 <li>
@@ -109,9 +139,11 @@
 
           <!-- Social -->
           <div class="social flex-w flex-l-m p-r-20">
-            
-            <a href=" http://Facebook.com/chickencottagepak" target="blank"><i class="fa fa-facebook m-l-21 fa-lg" aria-hidden="true"></i></a>
-            <a href=" https://www.instagram.com/chickencottagepak/" target="blank"><i class="fa fa-instagram m-l-21 fa-lg" aria-hidden="true"></i></a>
+
+            <a href=" http://Facebook.com/chickencottagepak" target="blank"><i class="fa fa-facebook m-l-21 fa-lg"
+                aria-hidden="true"></i></a>
+            <a href=" https://www.instagram.com/chickencottagepak/" target="blank"><i
+                class="fa fa-instagram m-l-21 fa-lg" aria-hidden="true"></i></a>
 
             <button class="btn-show-sidebar m-l-33 trans-0-4"></button>
           </div>
@@ -119,7 +151,7 @@
       </div>
     </div>
   </header>
-  
+
 
 
 
@@ -133,7 +165,7 @@
       <li class="t-center m-b-13">
         <a href="home" class="txt19">Home</a>
       </li>
-      
+
       <li class="t-center m-b-13">
         <a href="franchise" class="txt19">franchise</a>
       </li>
@@ -148,12 +180,13 @@
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
           <a class="dropdown-item" href="/crispy">Crispy</a>
+          <a class="dropdown-item" href="/grilled">Grilled</a>
+          <a class="dropdown-item" href="/bbq">BBQ</a>
           <a class="dropdown-item" href="/burger">Burger</a>
           <a class="dropdown-item" href="/wrap">Wraps</a>
           <a class="dropdown-item" href="/vegetarian">Vegetarian</a>
-          <a class="dropdown-item" href="/bbq">BBQ</a>
           <a class="dropdown-item" href="/salad">Salad</a>
-          <a class="dropdown-item" href="/grilled">Grilled</a>
+         
           <a class="dropdown-item" href="/sides">Sides</a>
         </div>
       </li>
@@ -162,14 +195,14 @@
         <a href="newabout" class="txt19">About us</a>
       </li>
 
-     
+
       <li class="t-center">
         <!-- Button3 -->
         <a href="contact" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto"> contact us </a>
       </li>
 
-    
-     
+
+
     </ul>
 
     <!-- - -->
@@ -179,46 +212,45 @@
 
       <!-- Gallery -->
       <div class="wrap-gallery-sidebar flex-w">
-        <a class="item-gallery-sidebar wrap-pic-w" href="images/interior1.jpg" data-lightbox="gallery-footer">
-          <img src="./images/interior1.jpg" alt="GALLERY" />
+        <a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-01.jpg" data-lightbox="gallery-footer">
+          <img src="./images/Burger.jpg" alt="GALLERY" />
         </a>
 
-        <a class="item-gallery-sidebar wrap-pic-w" href="images/interior2.jpg" data-lightbox="gallery-footer">
-          <img src="./images/interior2.jpg" alt="GALLERY" />
+        <a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
+          <img src="./images/welcome3.jpg" alt="GALLERY" />
         </a>
 
-        <a class="item-gallery-sidebar wrap-pic-w" href="images/food3.jpg" data-lightbox="gallery-footer">
-          <img src="images/food3.jpg" alt="GALLERY" />
+        <a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
+          <img src="images/photo-gallery-thumb-03.jpg" alt="GALLERY" />
         </a>
 
-        <a class="item-gallery-sidebar wrap-pic-w" href="images/interior4.jpg" data-lightbox="gallery-footer">
-          <img src="images/interior4.jpg" alt="GALLERY" />
+        <a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-05.jpg" data-lightbox="gallery-footer">
+          <img src="images/photo-gallery-thumb-05.jpg" alt="GALLERY" />
         </a>
 
-        <a class="item-gallery-sidebar wrap-pic-w" href="images/interior5.jpg" data-lightbox="gallery-footer">
-          <img src="images/interior5.jpg" alt="GALLERY" />
+        <a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-06.jpg" data-lightbox="gallery-footer">
+          <img src="images/photo-gallery-thumb-06.jpg" alt="GALLERY" />
         </a>
 
-        <a class="item-gallery-sidebar wrap-pic-w" href="images/Culinary expertise.jpg" data-lightbox="gallery-footer">
-          <img src="images/Culinary expertise.jpg" alt="GALLERY" />
+        <a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-07.jpg" data-lightbox="gallery-footer">
+          <img src="images/photo-gallery-thumb-07.jpg" alt="GALLERY" />
         </a>
 
-        <a class="item-gallery-sidebar wrap-pic-w" href="images/interior6.jpg" data-lightbox="gallery-footer">
-          <img src="images/interior6.jpg" alt="GALLERY" />
+        <a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-09.jpg" data-lightbox="gallery-footer">
+          <img src="images/photo-gallery-thumb-09.jpg" alt="GALLERY" />
         </a>
 
-        <a class="item-gallery-sidebar wrap-pic-w" href="images/food4.jpg" data-lightbox="gallery-footer">
-          <img src="images/food4.jpg" alt="GALLERY" />
+        <a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-10.jpg" data-lightbox="gallery-footer">
+          <img src="images/photo-gallery-thumb-10.jpg" alt="GALLERY" />
         </a>
 
-        <a class="item-gallery-sidebar wrap-pic-w" href="images/mouth watering.jpg" data-lightbox="gallery-footer">
-          <img src="images/mouth watering.jpg" alt="GALLERY" />
+        <a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-11.jpg" data-lightbox="gallery-footer">
+          <img src="images/photo-gallery-thumb-11.jpg" alt="GALLERY" />
         </a>
       </div>
     </div>
   </aside>
-
-  <br><br>
+  <br><br><br>
   <!--|||||||||||||||||||||||||||||||||||||||||||TITLE|||||||||||||||||||||||||||||||||||||||-->
   <section id="title">
 
@@ -230,7 +262,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-10 col-md-10">
-          <h1 style="color: red; font-weight: 700; font-size: 3.5rem">Join us, Become a franchise</h1>
+          <h3 class="title-txt" style="color: red; font-weight: 700; font-size: 3.5rem">Join us, Become a franchise</h3>
         </div>
         <div class="col-md-2 col-sm-2 col-lg-2 " style="text-align: center">
           <a href="./apply"> <button class="title-button" style="border:3px solid red;">Apply</button> </a>
@@ -242,8 +274,8 @@
   </section>
   <!--||||||||||||||||||||||||||||||||||||||||||||||||Section2|||||||||||||||||||||||||||||||||||||-->
   <section id="unordered">
-    <div class="container list" style="padding: 2%; padding-right: 30%;">
-      <ul style="background-color: white; border: 1px solid red;padding: 3%;">
+    <div class="container" style="padding-top: 2%;">
+      <ul style="background-color: white; border: 1px solid red;padding: 5% 10%;">
         <ul>
           <h1 style="color: red; font-size: 1.9rem;">What you'll need?</h1>
           <br />
@@ -297,7 +329,7 @@
     </div>
     <div class="container-fluid">
       <div class="col-lg-12">
-        <img src="./images/office.jpg" alt="" style="width: 100%; height: 500px; padding: 5%" />
+        <img class="table-pic" src="./images/office.jpg" alt="" style="width: 100%; height: 500px; padding: 5%" />
       </div>
     </div>
   </section>
